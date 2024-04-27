@@ -1,0 +1,59 @@
+:root {
+    --c-pri: #FAB;
+    --c-sec: #00F;
+}
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+body {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    -webkit-text-size-adjust: 100%;
+}
+#main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 70vw;
+    height: 100vh;
+}
+video {
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    text-align: left;
+}
+
+
+/* DOWNLOAD BUTTON STYLE */
+.dwnl_button {
+    margin-top: 1em;
+    padding: 0 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: flex-end;
+    font-family: Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    background-color: var(--c-pri);
+}
+.dwnl_button:hover {
+    background-color: var(--c-sec);
+}
+.dwnl_button:hover>* {
+    color: var(--c-pri);
+}
+
+.dwnl_button > p {
+    color: var(--c-sec);
+    text-align: center;
+    font-size: 2em;
+    width: 100%;
+}
